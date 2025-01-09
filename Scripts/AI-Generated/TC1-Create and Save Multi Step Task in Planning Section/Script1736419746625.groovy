@@ -2,7 +2,7 @@ import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import truetest.common.createMultiStepTaskInPetV1
+import truetest.common.createMultiStepTaskAndNavigate
 import truetest.custom.TrueTestScripts
 
 def reportLocation = RunConfiguration.getReportFolder()
@@ -19,9 +19,9 @@ def setup() {
 
 TrueTestScripts.navigate("planning")
 
-"Step 2: Create a multi-step task and navigate through the steps."
+"Step 2: Create a multi-step task and navigate through steps"
 
-createMultiStepTaskInPetV1.execute(data_path_0, Integer.valueOf(index_0))
+createMultiStepTaskAndNavigate.execute(data_path_0, Integer.valueOf(index_0))
 
 "Step 3: Adjust div sliderTrack by input value (SliderTrack)"
 
@@ -49,7 +49,7 @@ WebUI.takeScreenshot(reportLocation + '/TC1/Step 5-Click on button Save - Naviga
 
 "Step 6: Take full page screenshot as checkpoint"
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TC1-Create and Save Multi Step Task in Planning Page_visual_checkpoint')
+WebUI.takeFullPageScreenshotAsCheckpoint('TC1-Create and Save Multi Step Task in Planning Section_visual_checkpoint')
 
 'Terminate test session: Close browser'
 

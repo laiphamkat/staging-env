@@ -2,8 +2,8 @@ import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import truetest.common.inputTaskDetailsInPetV1
-import truetest.common.selectProjectAndOptionsInPetV1
+import truetest.common.inputTaskNameAndDescription
+import truetest.common.selectProjectAndTeamOptionsForPetManagement
 import truetest.custom.TrueTestScripts
 
 def reportLocation = RunConfiguration.getReportFolder()
@@ -20,9 +20,9 @@ def setup() {
 
 TrueTestScripts.navigate("planning")
 
-"Step 2: Select a project and options from dropdowns and search."
+"Step 2: Select project and team options for pet management"
 
-selectProjectAndOptionsInPetV1.execute(data_path_0, Integer.valueOf(index_0))
+selectProjectAndTeamOptionsForPetManagement.execute(data_path_0, Integer.valueOf(index_0))
 
 "Step 3: Click on button CreateTask"
 
@@ -80,9 +80,9 @@ WebUI.enhancedClick(findTestObject('AI-Generated/Page_generic/button_CreateTaskM
 
 WebUI.takeScreenshot(reportLocation + '/TC4/Step 9-Click on button CreateTaskMultiStep.png')
 
-"Step 10: Input task name and description and proceed to the next step."
+"Step 10: Input task name and description for new task"
 
-inputTaskDetailsInPetV1.execute(data_path_1, Integer.valueOf(index_1))
+inputTaskNameAndDescription.execute(data_path_1, Integer.valueOf(index_1))
 
 "Step 11: Click on kendo DropdownList"
 
@@ -174,7 +174,7 @@ WebUI.takeScreenshot(reportLocation + '/TC4/Step 21-Click on item PetV12 - Navig
 
 "Step 22: Take full page screenshot as checkpoint"
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TC4-Create Task with Details and Multi Step Navigation_visual_checkpoint')
+WebUI.takeFullPageScreenshotAsCheckpoint('TC4-Create and Save Multi Step Task with Detailed Inputs and Navigation_visual_checkpoint')
 
 'Terminate test session: Close browser'
 

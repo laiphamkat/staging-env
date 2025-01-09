@@ -2,7 +2,7 @@ import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import truetest.common.createMultiStepTaskInPetV1
+import truetest.common.createMultiStepTaskAndNavigate
 import truetest.custom.TrueTestScripts
 
 def reportLocation = RunConfiguration.getReportFolder()
@@ -19,9 +19,9 @@ def setup() {
 
 TrueTestScripts.navigate("planning")
 
-"Step 2: Create a multi-step task and navigate through the steps."
+"Step 2: Create a multi-step task and navigate through steps"
 
-createMultiStepTaskInPetV1.execute(data_path_0, Integer.valueOf(index_0))
+createMultiStepTaskAndNavigate.execute(data_path_0, Integer.valueOf(index_0))
 
 "Step 3: Click on button Save -> Navigate to page 'generic#pet-v1'"
 
@@ -73,7 +73,7 @@ WebUI.takeScreenshot(reportLocation + '/TC3/Step 8-Click on item PetV1 - Navigat
 
 "Step 9: Take full page screenshot as checkpoint"
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TC3-Create and Navigate Multi Step Task with User Profile Access_visual_checkpoint')
+WebUI.takeFullPageScreenshotAsCheckpoint('TC3-Create and Save Multi Step Task with Navigation to Different Sections_visual_checkpoint')
 
 'Terminate test session: Close browser'
 
