@@ -1,0 +1,15 @@
+{
+    "steps": [
+        "step 1: Navigate to planning",
+        "step 2: Click on html Generic",
+        "step 3: Select a project and options from dropdowns and search.",
+        "step 4: Click on input SearchTasks",
+        "step 5: Enter input value in input SearchTasks",
+        "step 6: Click on button CreateTaskMultiStep -> Navigate to page 'dynamic#pet-v1/*/step1'",
+        "step 7: Click on input TaskName",
+        "step 8: Input task name and description and proceed to the next step.",
+        "step 9: Click on label Option2",
+        "step 10: Adjust slider inputs for task and save the details.",
+        "step 11: Take full page screenshot as checkpoint"
+    ]
+}
