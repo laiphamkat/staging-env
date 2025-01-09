@@ -1,0 +1,19 @@
+{
+    "steps": [
+        "step 1: Navigate to planning",
+        "step 2: Click on html Generic",
+        "step 3: Select a pet and configure project and input options.",
+        "step 4: Click on input SearchTasks",
+        "step 5: Enter input value in input SearchTasks2",
+        "step 6: Click on button CreateTaskMultiStep3 -> Navigate to page 'dynamic#pet-v1/*/step1'",
+        "step 7: Click on input TaskName",
+        "step 8: Create a new task by filling in the name and description.",
+        "step 9: Click on label Option2",
+        "step 10: Click on button DoneViewDetail2",
+        "step 11: Adjust div sliderTracks by input value (SliderTrack2)",
+        "step 12: Adjust div sliderTracks by input value (SliderTrack3)",
+        "step 13: Adjust div sliderTracks by input value (SliderTrack4)",
+        "step 14: Click on button Save2 -> Navigate to page 'generic#pet-v1'",
+        "step 15: Take full page screenshot as checkpoint"
+    ]
+}

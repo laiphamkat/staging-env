@@ -2,8 +2,8 @@ import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import truetest.common.inputTaskDetailsAndSubmitForm
-import truetest.common.selectPetOptionsAndInputDetails
+import truetest.common.createNewTaskAndSubmitForm
+import truetest.common.selectPetAndConfigureOptions
 import truetest.custom.TrueTestScripts
 
 def reportLocation = RunConfiguration.getReportFolder()
@@ -28,9 +28,9 @@ WebUI.enhancedClick(findTestObject('AI-Generated/Page_generic/html_Generic'))
 
 WebUI.takeScreenshot(reportLocation + '/TC2/Step 2-Click on html Generic.png')
 
-"Step 3: Select pet options and enter details in the form."
+"Step 3: Select a pet and configure project and input options."
 
-selectPetOptionsAndInputDetails.execute(data_path_0, Integer.valueOf(index_0))
+selectPetAndConfigureOptions.execute(data_path_0, Integer.valueOf(index_0))
 
 "Step 4: Click on input SearchTasks"
 
@@ -64,9 +64,9 @@ WebUI.enhancedClick(findTestObject('AI-Generated/Page_dynamic/input_TaskName'))
 
 WebUI.takeScreenshot(reportLocation + '/TC2/Step 7-Click on input TaskName.png')
 
-"Step 8: Input task details and proceed to form submission."
+"Step 8: Create a new task by filling in the name and description."
 
-inputTaskDetailsAndSubmitForm.execute(data_path_1, Integer.valueOf(index_1))
+createNewTaskAndSubmitForm.execute(data_path_1, Integer.valueOf(index_1))
 
 "Step 9: Click on label Option2"
 
@@ -118,7 +118,7 @@ WebUI.takeScreenshot(reportLocation + '/TC2/Step 14-Click on button Save2 - Navi
 
 "Step 15: Take full page screenshot as checkpoint"
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TC2-Search and Create Multi step Tasks in Pet Planning Application_visual_checkpoint')
+WebUI.takeFullPageScreenshotAsCheckpoint('TC2-Search and Create Multi Step Task for Selected Pet_visual_checkpoint')
 
 'Terminate test session: Close browser'
 

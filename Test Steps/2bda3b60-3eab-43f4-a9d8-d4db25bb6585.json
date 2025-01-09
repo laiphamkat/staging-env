@@ -1,0 +1,26 @@
+{
+    "steps": [
+        "step 1: Navigate to planning",
+        "step 2: Select a pet and configure project and input options.",
+        "step 3: Click on button CreateTask",
+        "step 4: Click on input TaskName",
+        "step 5: Enter input value in input TaskName2",
+        "step 6: Click on textarea Description",
+        "step 7: Enter input value in textarea Description2",
+        "step 8: Click on button Create",
+        "step 9: Click on button CreateTaskMultiStep",
+        "step 10: Create a new task by filling in the name and description.",
+        "step 11: Click on kendo DropdownList",
+        "step 12: Click on item Select1",
+        "step 13: Click on input SearchTasks",
+        "step 14: Click on button DoneViewDetail",
+        "step 15: Adjust div sliderTracks by input value (SliderTrack)",
+        "step 16: Click on button Save -> Navigate to page 'generic#pet-v1'",
+        "step 17: Click on button CreateTaskMultiStep2 -> Navigate to page 'dynamic#pet-v1/*/step1'",
+        "step 18: Click on item Info -> Navigate to page 'informational#info'",
+        "step 19: Click on item Profile -> Navigate to page 'user profile#profile'",
+        "step 20: Click on item Team -> Navigate to page '/'",
+        "step 21: Click on item PetV1 -> Navigate to page 'generic#pet-v1'",
+        "step 22: Take full page screenshot as checkpoint"
+    ]
+}
