@@ -1,0 +1,84 @@
+Flow ID,Name,Description,Test Steps,Flow Priority,Status
+1,Create Multi Step Task with Custom Parameters in Pet Application,"Navigate to the planning page, select a team and project, create a multi-step task with details, and save the task.","Step 1: Navigate to planning
+Step 2: Click on item PetV1
+Step 3: Choose a team from dropdown and select a project
+	- Step 1: Click on kendo DropdownList
+	- Step 2: Click on item teamOptions (Team22)
+	- Step 3: Select option with input value from select SelectProject
+	- Step 4: Click on input MultiSelect2
+	- Step 5: Click on item teamOptions (Option2)
+Step 4: Click on div FilterTasks
+Step 5: Select option with input value from select MultiSelectNative
+Step 6: Click on input NativeInput
+Step 7: Enter input value in input NativeInput
+Step 8: Click on input SearchTasks
+Step 9: Enter input value in input SearchTasks
+Step 10: Click on button CreateTaskMultiStep -> Navigate to page 'dynamic#pet-v1/*/step1'
+Step 11: Click on input TaskName
+Step 12: Enter input value in input TaskName
+Step 13: Click on button NextToStep -> Navigate to page 'form submission#pet-v1/*/step2'
+Step 14: Click on textarea TaskDescription
+Step 15: Enter input value in textarea TaskDescription
+Step 16: Click on button NextToStep -> Navigate to page 'api endpoint#pet-v1/*/*'
+Step 17: Click on input Option2
+Step 18: Click on dropdownlist kendo (Dropdownlist)
+Step 19: Click on item selectOptions (Select1)
+Step 20: Click on kendo ChipOption
+Step 21: Click on input Checkbox
+Step 22: Click on dropdownlist kendo (DropdownlistSelect)
+Step 23: Click on item selectOptions (Select2)
+Step 24: Click on label Option2
+Step 25: Click on button DoneViewDetail
+Step 26: Adjust div sliderTracks by input value (SliderTrack)
+Step 27: Adjust div sliderTracks by input value (SliderTrack2)
+Step 28: Adjust div sliderTracks by input value (SliderTrack3)
+Step 29: Click on button Save -> Navigate to page 'generic#pet-v1'
+Step 30: Take full page screenshot as checkpoint
+",High,NEW
+2,Update User Profile and Create New Task in Pet Application,"Access user profile, update personal information, select a team, and create a new task with specific details before saving.","Step 1: Navigate to planning
+Step 2: Click on item Profile -> Navigate to page 'user profile#profile'
+Step 3: Click on span ClearButton
+Step 4: Enter input value in input FirstName
+Step 5: Click on input LastName
+Step 6: Click on fieldset AvatarPhoto
+Step 7: Enter input value in input LastName
+Step 8: Click on kendo Component
+Step 9: Click on span ClearEmailButton
+Step 10: Enter input value in input EmailAddress
+Step 11: Click on input Phone
+Step 12: Enter input value in input Phone
+Step 13: Click on input Country
+Step 14: Click on span ClearButton2
+Step 15: Click on kendo Switch
+Step 16: Click on label OrganicTeam
+Step 17: Click on button SaveChanges
+Step 18: Click on item PetV1 -> Navigate to page 'generic#pet-v1'
+Step 19: Click on kendo DropdownList
+Step 20: Click on item teamOptions (Team2)
+Step 21: Choose a team from dropdown and select a project
+	- Step 1: Click on kendo DropdownList
+	- Step 2: Click on item teamOptions (Team22)
+	- Step 3: Select option with input value from select SelectProject
+	- Step 4: Click on input MultiSelect2
+	- Step 5: Click on item teamOptions (Option2)
+Step 22: Click on input MultiSelect
+Step 23: Click on item teamOptions (Option1)
+Step 24: Select option with input value from select MultiSelectNative
+Step 25: Select option with input value from select MultiSelectNative
+Step 26: Click on input NativeInput
+Step 27: Enter input value in input NativeInput
+Step 28: Click on button CreateTask
+Step 29: Click on input CreateTask
+Step 30: Enter input value in input CreateTask
+Step 31: Click on textarea Description
+Step 32: Enter input value in textarea Description2
+Step 33: Click on button Create
+Step 34: Click on button ViewDetail -> Navigate to page 'api endpoint#pet-v1/*/*'
+Step 35: Adjust div sliderTracks by input value (SliderTrack)
+Step 36: Click on kendo DrawerContainer
+Step 37: Click on div TaskDetails
+Step 38: Adjust div sliderTracks by input value (SliderTrack2)
+Step 39: Click on kendo DrawerContainer
+Step 40: Click on button Save -> Navigate to page 'generic#pet-v1'
+Step 41: Take full page screenshot as checkpoint
+",Trivial,NEW

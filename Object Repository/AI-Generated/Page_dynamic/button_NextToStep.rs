@@ -34,6 +34,6 @@
         <name>text</name>
         <type>Main</type>
         <value>Next to Step 2</value>
-        <webElementGuid>6ab69d6b-e2d7-497e-b750-0b0125825ac9</webElementGuid>
+        <webElementGuid>72549dc4-1197-405f-bb5d-f46f8b3e282e</webElementGuid>
     </webElementProperties>
 </WebElementEntity>

@@ -34,7 +34,7 @@
         <name>id</name>
         <type>Main</type>
         <value>native-input</value>
-        <webElementGuid>6ab69d6b-e2d7-497e-b750-0b0125825ac9</webElementGuid>
+        <webElementGuid>72549dc4-1197-405f-bb5d-f46f8b3e282e</webElementGuid>
     </webElementProperties>
     <webElementProperties>
         <isSelected>true</isSelected>
@@ -42,6 +42,6 @@
         <name>type</name>
         <type>Main</type>
         <value>text</value>
-        <webElementGuid>6ab69d6b-e2d7-497e-b750-0b0125825ac9</webElementGuid>
+        <webElementGuid>72549dc4-1197-405f-bb5d-f46f8b3e282e</webElementGuid>
     </webElementProperties>
 </WebElementEntity>
